@@ -1,0 +1,746 @@
+
+/* ------------------------ */
+/* HEADER STYLES */
+/* ------------------------ */
+.header{
+  display: flex;
+  height: 9.6rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bgorange);
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo{
+  height: 2.2rem;
+}
+
+/* NAVIGATION */
+.main-nav-list{
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--color-darkgray);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active{
+  color: var(--color-darkorange1);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited{
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active{
+  background-color: var(--color-darkorange1);
+}
+
+/* MOBILE MENU */
+.btn-mobile-nav{
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav{
+  font-size: 4.8rem;
+  color: var(--color-darkgray);
+}
+
+.icon-mobile-nav[name="close-outline"]{
+  display: none;
+}
+
+/* ------------------------ */
+/* SECTION HERO */
+/* ------------------------ */
+.section-hero{
+  background-color: var(--color-bgorange);
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero{
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 0 3.2rem;
+}
+
+.hero-img{
+  width: 100%;
+}
+
+.hero-heading{
+  font-size: clamp(2.4rem, 5.2rem, 6.4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--color-darkgray);
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description{
+  font-size: clamp(1.6rem, 2.0rem, 2.8rem);
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited{
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  font-weight: 600;
+
+  /* only necessary for btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-full:link,
+.btn-full:visited{
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+
+.btn-full:hover,
+.btn-full:active{
+  background-color: var(--color-darkorange1);
+
+}
+
+.btn-outline:link,
+.btn-outline:visited{
+  background-color: var(--color-white);
+  color: var(--color-darkgray);
+}
+
+.btn-outline:hover,
+.btn-outline:active{
+  background-color: transparent;
+  box-shadow: inset 0 0 0 3px var(--color-white);
+}
+
+.btn-form{
+  background-color: var(--color-darkbrown);
+  color: var(--color-bgorange);
+  padding: 1.2rem 3.2rem;
+  /* align-self: end; */
+}
+
+.btn-form:hover{
+  background-color: var(--color-white);
+  color: var(--color-darkgray);
+}
+
+
+.delivered-meals{
+  display: flex;
+  margin-top: 8rem;
+  gap: 1.6rem;
+  align-items: center;
+} 
+
+.delivered-imgs{
+  display: flex;
+}
+
+.delivered-imgs img{
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-left: -2rem;
+  border: 3px solid var(--color-bgorange)
+}
+
+.delivered-text{
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.delivered-text span{
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+
+/* ------------------------ */
+/* FEATURED IN */
+/* ------------------------ */
+
+.section-featured{
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  text-align: center;
+  color: var(--color-darkgray);
+}
+
+.logos{
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.logos img{
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 60%;
+}
+
+/* ------------------------ */
+/* HOW IT WORKS SECTION */
+/* ------------------------ */
+
+.section-how{
+  padding: 9.6rem 0;
+}
+
+.step-img{
+  width: 35%;
+}
+
+.step-description{
+  font-size: 1.8rem;
+  line-height: 1.8;
+
+}
+
+.step-number{
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: var(--color-lightgray);
+  margin-bottom: 1.2rem;
+}
+
+
+.step-img-box{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::after,
+.step-img-box::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.step-img-box::before{
+  background-color: var(--color-stepbefore);
+  width: 60%;
+  padding-bottom: 60%;
+}
+
+.step-img-box::after{
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: var(--color-stepafter);
+}
+
+/* ------------------------ */
+/* SECTION MEALS */
+/* ------------------------ */
+
+.section-meals{
+  padding: 9.6rem 0;
+}
+
+.meal{
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0, 0.2);
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.meal-img{
+  width: 100%;
+}
+
+.meal-tags{
+  margin-bottom: 1.2rem;
+}
+
+.meal-content{
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.tag{
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--color-darkgray);
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+.tag--vegetarian{
+background-color: var(--color-vegetarian);
+}
+
+.tag--vegan{
+  background-color: var(--color-vegan);
+}
+
+.tag--paleo{
+  background-color: var(--color-paleo);
+}
+
+.meal-title{
+  font-size: 2.4rem;
+  color: var(--color-darkgray);
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.meal-attributes{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute{
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.meal-flame,
+.meal-fork,
+.meal-star{
+  font-size: 2.4rem;
+  color: var(--color-orange);
+}
+
+/* LIST */
+
+.diets{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.list-item{
+  display: flex;
+  font-size: 1.8rem;
+  align-items: center;
+}
+
+.list span{
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.list-checkmark{
+  font-size: 3rem;
+  color: var(--color-orange);
+  margin-right: 1.2rem;
+}
+
+.all-recipes{
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+.link:link,
+.link:visited{
+  display: inline-block;
+  color: var(--color-orange);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.link:hover,
+.link:active{
+  display: inline-block;
+  color: var(--color-darkorange1);
+  border-bottom: 1px solid transparent;
+}
+
+
+/* ------------------------ */
+/* SECTION TESTIMONIALS */
+/* ------------------------ */
+
+.section-testimonials{
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  background-color: var(--color-bgorange);
+  align-items: center;
+}
+
+.testimonials-container{
+  padding: 9.6rem;
+}
+
+.testimonials{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img{
+  width: 64px;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text{
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name{
+  font-size: 1.6rem;
+  color: var(--color-darkgray);
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item{
+  overflow: hidden;
+}
+
+.gallery-item img{
+  display: block;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.gallery-item img:hover{
+  transform: scale(1.1);
+}
+
+/* ------------------------ */
+/* SECTION PRICING */
+/* ------------------------ */
+
+.section-pricing{
+  padding: 9.6rem 0;
+}
+
+.pricing-plan{
+  border-radius: 1.1rem;
+  width: 75%;
+}
+
+.plan-header{
+  text-align: center;
+  margin-bottom: 6.8rem;
+}
+
+.plan-name{
+  color: var(--color-darkorange1);
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-pricing{
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: var(--color-darkgray);
+  margin-bottom: 1.6rem;
+}
+
+.plan-text{
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: var(--color-mdgray);
+}
+
+.plan-pricing span{
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-orange);
+  margin-right: 0.8rem;
+}
+
+.plan-sign-up{
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.pricing-plan--starter{
+  justify-self: end;
+  border: 1px solid rgba(242, 175, 98, 0.3);
+  padding: 4.7rem;
+}
+
+.pricing-plan--complete{
+  padding: 4.8rem;
+  background-color: var(--color-bgorange);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after{
+  content: "Best Value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: var(--color-tag);
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-details{
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-orange);
+}
+
+/* ------------------------ */
+/* SECTION FEATURE */
+/* ------------------------ */
+
+.feature-icon{
+  font-size: 3.6rem;
+  color: var(--color-darkorange1);
+  margin-bottom: 2rem;
+  background-color: var(--color-bgorange);
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title{
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text{
+  font-size: 1.8rem;
+}
+
+/* ------------------------ */
+/* SECTION CTA */
+/* ------------------------ */
+
+.section-cta{
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 1.2rem;
+  background-image: linear-gradient(to right bottom, #eea564, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box{
+  color: var(--color-darkbrown);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text{
+  font-size: 1.8rem;
+  font-weight: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta .heading-secondary{
+  color: var(--color-darkbrown);
+  margin-bottom: 3.2rem;
+}
+
+.cta-img-box{
+  background-image: url('../img/eating.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
+  opacity: 0.4;
+}
+
+/* CT FORM */
+.cta-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select{
+  color: inherit;
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  border-radius: 9px;
+  font-family: inherit;
+  border: none;
+  background-color: var(--color-bgorange);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder{
+  color: var(--color-darkbrown);
+  opacity: 0.3;
+}
+
+.cta-form select{
+  font-family: inherit;
+
+}
+
+.cta *:focus{
+  box-shadow: inset 0 0 0 0.3rem rgba(230, 125, 34, 0.8);
+}
+
+
+/* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+
+.footer{
+  padding: 12.8rem 0;
+  border-top: 1px solid var(--color-lightgray);
+}
+
+.footer *:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.footer-heading{ 
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-nav{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--color-mdgray);
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:active{
+  color: #555;
+}
+
+.footer-icon{
+  font-size: 2.4rem;
+}
+
+.social-links{
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+}
+
+.logo-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo{
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.copyright{
+  font-size: 1.4rem;
+  color: var(--color-mdgray);
+  line-height: 1.6;
+  margin-top: auto;
+  text-align: center;
+}
+
+.contacts{
+  font-style: normal;
+  font-size: 1.6rem;
+  list-style: 1.6;
+}
+
+
+.address{
+  margin-bottom: 2.4rem;
+}
+

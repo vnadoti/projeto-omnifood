@@ -1,0 +1,24 @@
+  /* VARIAVÉIS */
+:root{
+  /* 01-SPACING-SYSTEM */
+  --spacing-32: 3.2rem;
+  --spacing-24: 2.4rem;
+  --spacing-16: 1.6rem;
+  /* 02-COLORS */
+  --color-orange: #e67e22;
+  --color-darkorange1: #cf711f;
+  --color-lightorange: #eea564;
+  --color-bgorange: #fdf2e9;
+  --color-darkgray: #323232;
+  --color-mdgray: #727272;
+  --color-lightgray: #ddd;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-darkbrown: #45260a;
+  --color-tag: #ffd43b;
+  --color-stepbefore: #fdf2e9;
+  --color-stepafter: #fae5d3;
+  --color-vegetarian: #51cf66;
+  --color-vegan: #94d82d;
+  --color-paleo: #e4b080;
+}
